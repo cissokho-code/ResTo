@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   font-family: serif;
+}
+/* le div golobales */
+.tous-les-contenues{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width:100% ;
+}
+/* le logo */
+.logo{
+    float: left;
+    margin: 10px 30px;
+    color: black;
+    font-weight: bold;
+}
+.logo1,
+.logo3,
+.logo6,
+.logo8,
+.logo1 {
+    color: rgb(255, 255, 255);
+}
+header{
+    background-color: green;
+    height: 50px;
+}
+/* le menu */
+.menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    list-style: none;
+}
+ul li{
+    margin-left: 50px;
+    margin-right: 30px;
+    margin-top: 25px;
+
+}
+ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 15px;
+   font-weight: bold;
+   color: rgb(255, 253, 253);
+   text-transform: capitalize;
+}
+a:hover {
+    color: rgba(0, 0,0,0.7);
+    cursor: pointer;
+}
+
+ /* le grand section */
+.cisco-r{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 30px 10px;
+}
+.cisco-r h2{
+    padding: 20px;
+    color: green;
+    font-weight: bold;
+}
+.cisco-r p{
+    padding: 10px;
+    color: green;
+    font-weight: bold;
+}
+.cisco-r button{
+    padding: 8px;
+    width: 200px;
+    background-color:green;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+.cisco-r button:hover{
+    background-color: rgb(43, 61, 30);
+    color: white;
+}
+/*  les plats et les images */
+.plats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.tout-plats {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.tout-plats h3,p{
+    text-align: center;
+    color: white;
+}
+.plats2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.submit{
+    float: right;
+    background-color: green;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+/* le footer */
+footer{
+    margin-top: 20px;
+    width: 100%;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    color: white;
+}
+footer p{
+    margin-top: 20px;
+}
+
+/* la partie responsive */
+/* ================= RESPONSIVE TELEPHONE ================= */
+
+@media screen and (max-width: 768px) {
+
+    /* header */
+    header {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    /* logo */
+    .logo {
+        float: none;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    /* menu */
+    .menu ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    ul li {
+        margin: 0;
+    }
+
+    ul li a {
+        display: block;
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    /* section principale */
+    .cisco-r {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .cisco-r h2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .cisco-r p {
+        font-size: 16px;
+    }
+
+    .cisco-r button {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    /* cartes plats */
+    .plats,
+    .plats2 {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .tout-plats {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* bouton commander */
+    .submit {
+        width: 100%;
+        margin-top: 10px;
+        float: none;
+    }
+
+    /* footer */
+    footer {
+        height: auto;
+        padding: 20px;
+    }
+}
