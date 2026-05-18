@@ -26,23 +26,23 @@
        <div class="menu">
            <nav>
             <ul>
-                <li><a href="">accueil</a></li>
-                <li><a href="">menu</a></li>
+                <li><a href="#accueil">accueil</a></li>
+                <li><a href="#menu">menu</a></li>
                 <li><a href="">service</a></li>
-                <li><a href="">contact</a></li>
+                <li><a href="#contact">contact</a></li>
             
             </ul>
            </nav>
        </div>
     </header>
     <!-- le grand section -->
-   <section class="cisco-r">
+   <section class="cisco-r" id="accueil">
         <h2>CISCOFOOD VOUS PROPOS LES MEILLEURS PLATS DU SENEGAL </h2>
         <p>Rapide - Délicieux - Pas cher</p>
-        <button>Commander</button>
+        <button type="submit">Commander</button>
    </section>
    <!-- les plats et les images -->
-    <section class="plats">
+    <section class="plats" id="menu">
         <div class="tout-plats">
             <img src="img-a/b1.jpg" alt="">
             <h3>Burger Simple</h3>
@@ -82,6 +82,18 @@
             <p>2500 FCFA</p>
               <button class="submit" type="submit">commander</button>
         </div>  
+    </section>
+    <!-- la section contact -->
+    <section id="contact" class="section-contact">
+        <div class="ctc">
+            <h1>CONTACTEZ-NOUS</h1>
+            <form action="#">
+                <input type="text" id="nom" placeholder="votre-nom">
+                <input type="text" id="prenom" placeholder="votre-prenom">
+                <input type="email" id="email" placeholder="votre-email">
+                <button>CONTACTEZ</button>
+            </form>
+        </div>
     </section>
     <!-- le footer -->
     <footer>
