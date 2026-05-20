@@ -93,6 +93,31 @@ a:hover {
     background-color: rgb(43, 61, 30);
     color: white;
 }
+/* section A proppos */
+.Apropos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url('img-a/apop.jpg');
+    background-size: cover;  
+    background-repeat: no-repeat;    
+    padding: 20px;
+    margin:40px 0;
+}
+.propos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(78, 68, 68,0.);
+    padding: 100px;
+    width: 70%px;
+}
+.propos p{
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
 /*  les plats et les images */
 .plats {
     display: flex;
